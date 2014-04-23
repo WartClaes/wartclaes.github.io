@@ -49,6 +49,14 @@ header a {
     color: #ffffff;
 }
 
+footer {
+    background: #109D59;
+    padding: 20px 0;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
 .container {
     width: 100%;
     max-width: 600px;
