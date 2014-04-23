@@ -1,9 +1,11 @@
 body {
     font-family: 'Ubuntu Mono', '';
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
-    color: #109D59;
+    color: #ffffff;
     font-size: 60px;
 }
 
@@ -36,6 +38,15 @@ pre{
 
 em {
     color: #999999;
+}
+
+header {
+    background: #109D59;
+    padding: 50px 0;
+}
+
+header a {
+    color: #ffffff;
 }
 
 .container {
