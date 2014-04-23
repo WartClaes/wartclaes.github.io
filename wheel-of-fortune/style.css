@@ -1,4 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #cccccc;
+    font-family: 'Ubuntu Mono', '';
+}
+
+h1 {
+    color: #109D59;
+    font-size: 60px;
+}
+
+h2 {
+    color: #109D59;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+a {
+    color: #109D59;
+}
+
+pre{
+    text-align: left;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    padding: 12px 24px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+em {
+    color: #999999;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-list {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    border: 3px solid #109D59;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: #109D59;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.btn.full {
+    background: #109D59;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background: #22c376;
+    color: #ffffff;
+    border: 3px solid #22c376;
+}
+
+.btn.full:hover {
+    background: #22c376;
+    border: 3px solid #22c376;
 }

@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -18,6 +19,108 @@
                 You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
             </p>
         <![endif]-->
-        Hello world
+        
+        <div class="container">
+            <h1>Wheel of Fortune</h1>
+            <p>Creates a wheel of fortune based on <a href="http://jsfiddle.net/jquery4u/sNYYD/" target="_blank">http://jsfiddle.net/jquery4u/sNYYD/</a></p>
+            <p>Here is the <a href="demo/">demo</a></p>
+            
+            <div class="button-list">
+                <h3>Get the code</h3>
+                <a href="https://github.com/WartClaes/Wheel-of-Fortune/archive/master.zip" class="btn full">Download zip</a>
+                <a href="https://github.com/WartClaes/Wheel-of-Fortune" target="_blank" class="btn">WOF on Github</a>
+            </div>    
+
+            <h2>Usage</h2>
+            <pre><code>$('#foo').wof(options [,callback]);</code></pre>
+
+            <h2>Options</h2>
+            <h3>wheel</h3>
+            <p>Change the element of the wheel.</p>
+
+            <pre><code><em>// Default: $(this)</em>
+$('#foo').wof({
+    wheel: $('#bar')
+});</code></pre>
+
+            <h3>marker</h3>
+            <p>Set an element as the marker. And oh boy, is it animated...</p>
+
+            <pre><code><em>// Default: false</em>
+$('#foo').wof({
+    marker: $('#marker')
+});</code></pre>
+
+            <h3>button</h3>
+            <p>Enable the click event on a button, straight out of the box. When not set, the wheel will start spinning by itself.</p>
+
+            <pre><code><em>// Default: $(this)</em>
+$('#foo').wof({
+    button: $('#button)
+});</code></pre>
+
+            <h3>prizes</h3>
+            <p>The array of prizes to share. This has to be the same as the wheel, but can be modified in this way.</p>
+
+            <pre><code><em>// Default: false, you need to set some prizes</em>
+$('#foo').wof({
+    prizes: [1, 2, 3, 4, 5, 6, 7, 8]
+});</code></pre>
+
+            <h3>duration</h3>
+            <p>What is the time of the animation in milliseconds.</p>
+
+            <pre><code><em>// Default: 6000</em>
+$('#foo').wof({
+    duration: 10000
+});</code></pre>
+
+            <h3>multiple</h3>
+            <p>Allow users to participate more than once.</p>
+
+            <pre><code><em>// Default: false. People can only win once</em>
+$('#foo').wof({
+    multiple: false
+});</code></pre>
+            
+            <h3>wonPrize</h3>
+            <p>Want to set a fix ending? Now you can.</p>
+
+            <pre><code><em>// Default: false</em>
+$('#foo').wof({
+    wonPrize: 6
+});</code></pre>
+
+            <h3>timeout</h3>
+            <p>Set a timeout on the spin. Best used when it starts automatically.</p>
+
+            <pre><code><em>// Default: false</em>
+$('#foo').wof({
+    timeout: 1000
+});</code></pre>
+
+            <h3>easing</h3>
+            <p>Set a different easing method.</p>
+
+            <pre><code><em>// Default: 'cubic-bezier(.25,0,.17,1)'</em>
+$('#foo').wof({
+    easing: 'linear'
+});</code></pre>
+
+            <h2>Callback</h2>
+            <p>When the animation ends, fire this. Won prize is available</p>
+
+            <pre><code>$('#foo').wof({
+    ...
+}, function(data){
+    // Set callback functions
+});</code></pre>
+
+            <div class="button-list">
+                <h3>Get the code</h3>
+                <a href="https://github.com/WartClaes/Wheel-of-Fortune/archive/master.zip" class="btn full">Download zip</a>
+                <a href="https://github.com/WartClaes/Wheel-of-Fortune" target="_blank" class="btn">WOF on Github</a>
+            </div>
+        </div>
     </body>
 </html>
