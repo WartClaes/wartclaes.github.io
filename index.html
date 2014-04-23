@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>wartclaes.github.io</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -20,96 +20,36 @@
             </p>
         <![endif]-->
         
-        <div class="container">
-            <h1>Wheel of Fortune</h1>
-            <p>Creates a wheel of fortune based on <a href="http://jsfiddle.net/jquery4u/sNYYD/" target="_blank">http://jsfiddle.net/jquery4u/sNYYD/</a></p>
-            <p>Here is the <a href="demo/">demo</a></p>
-            
-            <div class="button-list">
-                <a href="https://github.com/WartClaes/Wheel-of-Fortune/archive/master.zip" class="btn full">Download zip</a>
-                <a href="https://github.com/WartClaes/Wheel-of-Fortune" target="_blank" class="btn">WOF on Github</a>
-            </div>    
-
-            <h2>Usage</h2>
-            <pre><code>$('#foo').wof(options [,callback]);</code></pre>
-
-            <h2>Options</h2>
-            <h3>wheel</h3>
-            <p>Change the element of the wheel.</p>
-
-            <pre><code><em>// Default: $(this)</em>
-$('#foo').wof({
-    wheel: $('#bar')
-});</code></pre>
-
-            <h3>marker</h3>
-            <p>Set an element as the marker. And oh boy, is it animated...</p>
-
-            <pre><code><em>// Default: false</em>
-$('#foo').wof({
-    marker: $('#marker')
-});</code></pre>
-
-            <h3>button</h3>
-            <p>Enable the click event on a button, straight out of the box. When not set, the wheel will start spinning by itself.</p>
-
-            <pre><code><em>// Default: $(this)</em>
-$('#foo').wof({
-    button: $('#button)
-});</code></pre>
-
-            <h3>prizes</h3>
-            <p>The array of prizes to share. This has to be the same as the wheel, but can be modified in this way.</p>
-
-            <pre><code><em>// Default: false, you need to set some prizes</em>
-$('#foo').wof({
-    prizes: [1, 2, 3, 4, 5, 6, 7, 8]
-});</code></pre>
-
-            <h3>duration</h3>
-            <p>What is the time of the animation in milliseconds.</p>
-
-            <pre><code><em>// Default: 6000</em>
-$('#foo').wof({
-    duration: 10000
-});</code></pre>
-
-            <h3>multiple</h3>
-            <p>Allow users to participate more than once.</p>
-
-            <pre><code><em>// Default: false. People can only win once</em>
-$('#foo').wof({
-    multiple: false
-});</code></pre>
-            
-            <h3>wonPrize</h3>
-            <p>Want to set a fix ending? Now you can.</p>
-
-            <pre><code><em>// Default: false</em>
-$('#foo').wof({
-    wonPrize: 6
-});</code></pre>
-
-            <h3>timeout</h3>
-            <p>Set a timeout on the spin. Best used when it starts automatically.</p>
-
-            <pre><code><em>// Default: false</em>
-$('#foo').wof({
-    timeout: 1000
-});</code></pre>
-
-            <h3>easing</h3>
-            <p>Set a different easing method.</p>
-
-            <pre><code><em>// Default: 'cubic-bezier(.25,0,.17,1)'</em>
-$('#foo').wof({
-    easing: 'linear'
-});</code></pre>
-
-            <div class="button-list">
-                <a href="https://github.com/WartClaes/Wheel-of-Fortune/archive/master.zip" class="btn full">Download zip</a>
-                <a href="https://github.com/WartClaes/Wheel-of-Fortune" target="_blank" class="btn">WOF on Github</a>
+        <header>
+            <div class="container">
+                <h1>wartclaes.github.io</h1>
+                <p>
+                    Check out one of my scripts.
+                </p>
             </div>
-        </div>
+        </header>
+        <section class="green">
+            <div class="container">
+                <h2>Wheel of Fortune</h2>
+                <p>Make a Wheel of Fortune in just a few seconds.</p>
+                <a href="http://wartclaes.github.io/wheel-of-fortune/" target="_blank" class="btn">View project</a>
+            </div>
+        </section>
+
+        <section class="yellow">
+            <div class="container">
+                <h2>Base HTML</h2>
+                <p>A standard HTML and CSS based on HTML5 Boilerplate, Nathan Smith's 960 grid and pieces from Bootstrap 3. Also provided: coding guidelines to make everyting consistent.</p>
+                <a href="https://github.com/WartClaes/Base" target="_blank" class="btn">Base HTML</a>
+            </div>
+        </section>
+
+        <section class="blue">
+            <div class="container">
+                <h2>Tinyslide</h2>
+                <p>A paginated gallery slider.</p>
+                <a href="https://github.com/WartClaes/tinyslide" target="_blank" class="btn">Tinyslide</a>
+            </div>
+        </section>
     </body>
 </html>

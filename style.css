@@ -1,14 +1,16 @@
+/*https://kuler.adobe.com/Google-Flat-%231-color-theme-3731357/edit/?copy=true&base=2&rule=Custom&selected=1&name=Copy%20of%20Google%20Flat%20%231&mode=rgb&rgbvalues=0.2627450980392157,0.5215686274509804,0.9607843137254902,0.8627450980392157,0.26666666666666666,0.21568627450980393,0.9882352941176471,0.7450980392156863,0.12156862745098039,0.06274509803921569,0.615686274509804,0.34901960784313724,1,1,1&swatchOrder=0,1,2,3,4*/
 body {
     font-family: 'Ubuntu Mono', '';
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
 }
 
 h1 {
-    color: #109D59;
     font-size: 60px;
 }
 
 h2 {
-    color: #109D59;
     font-size: 40px;
     margin-top: 50px;
     margin-bottom: 0;
@@ -20,22 +22,27 @@ h3 {
 }
 
 a {
-    color: #109D59;
+    color: #ffffff;
 }
 
-pre{
-    text-align: left;
-    border: 1px solid #CCCCCC;
-    background: #EEEEEE;
-    padding: 12px 24px;
-    font-size: 13px;
-    line-height: 19px;
-    overflow: auto;
-    border-radius: 3px;
+header {
+    background: #DC4437;
+    padding: 50px 0;
 }
 
-em {
-    color: #999999;
+section.green {
+    padding: 50px 0;
+    background: #109D59;
+}
+
+section.yellow {
+    padding: 50px 0;
+    background: #FCBE1F;
+}
+
+section.blue {
+    padding: 50px 0;
+    background: #4385F5;
 }
 
 .container {
@@ -51,27 +58,11 @@ em {
 
 .btn {
     display: inline-block;
-    border: 3px solid #109D59;
+    border: 3px solid #FFFFFF;
     border-radius: 5px;
     padding: 6px 12px;
-    color: #109D59;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 24px;
     text-transform: uppercase;
-}
-
-.btn.full {
-    background: #109D59;
-    color: #ffffff;
-}
-
-.btn:hover {
-    background: #22c376;
-    color: #ffffff;
-    border: 3px solid #22c376;
-}
-
-.btn.full:hover {
-    background: #22c376;
-    border: 3px solid #22c376;
 }
